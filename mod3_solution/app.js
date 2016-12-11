@@ -9,7 +9,7 @@ angular.module('NarrowItDownApp', [])
 
 function FoundItems() {
   var ddo = {
-    templateUrl: 'listItem.html'
+    templateUrl: 'listItem.html',
   };
 
   return ddo;
