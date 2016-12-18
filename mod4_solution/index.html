@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>No Cookie Shopping List</title>
+  </head>
+  <body>
+    <h1>Welcome to Category List</h1>
+
+    <ui-view></ui-view>
+
+    <!-- <ui-view></ui-view> -->
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/shoppinglist/data.module.js"></script>
+    <script src="src/shoppinglist/menuapp.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+    <script src="src/shoppinglist/category.component.js"></script>
+    <script src="src/shoppinglist/category.controller.js"></script>
+    <script src="src/shoppinglist/item.component.js"></script>
+    <script src="src/shoppinglist/itemcat.controller.js"></script>
+    <script src="src/shoppinglist/menudata.service.js"></script>
+
+  </body>
+</html>
