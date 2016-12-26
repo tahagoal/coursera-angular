@@ -1,0 +1,20 @@
+<div class="container" ng-if="infoCtrl.validate">
+	<h1>Registration Information</h1>
+	<h3>First Name: {{infoCtrl.user.firstname}}</h3>
+	<h3>Last Name: {{infoCtrl.user.lastname}}</h3>
+	<h3>Phone Number: {{infoCtrl.user.phone}}</h3>
+	<h3>Email: {{infoCtrl.user.email}}</h3><br>
+
+	<h3>You favourite dish</h3>
+	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+	    <div class="category-tile">
+	      <img width="200" height="200" ng-src="images/menu/{{infoCtrl.userInfo.category_short_name}}/{{infoCtrl.userInfo.category_short_name}}.jpg">
+	      <span class="ng-binding">{{infoCtrl.userInfo.name}}</span>
+	    </div>
+	      <p class="ng-binding">{{infoCtrl.userInfo.description}}</p>
+	</div>
+</div>
+
+<div class="container" ng-if="!infoCtrl.validate">
+	<h4>Not Signed Up Yet. <a ui-sref="public.sign">Sign up Now!</a></h4>
+</div>
